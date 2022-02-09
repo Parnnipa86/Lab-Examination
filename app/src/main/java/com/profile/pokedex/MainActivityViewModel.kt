@@ -33,7 +33,7 @@ class MainActivityViewModel constructor(private val repo : PokemonRepo)
                         }else{
                             result.url.takeLastWhile { it.isDigit() }
                         }
-                        val imgUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pID}.png"
+                        val imgUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7${pID}.png"
                         ListItem(result.name, result.url, imgUrl)
                     }
                     pokemonListItem.postValue(item)
